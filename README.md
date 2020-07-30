@@ -2,7 +2,7 @@
 
 A front-end interface to play the popular "The Alphabet" style trivia game with your friends.
 
-<img src="https://www.andresfrixione.com/pasapalabrasdemo.jpg" />
+<img src="https://www.andresfrixione.com/pasapalabras/pasapalabrasdemo.jpg" />
 
 ## Purpose of the game
 
@@ -45,7 +45,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 <li>Duration: anywhere from 30 seconds to 300 seconds or No Limit. If no limit is selected, then the clock won't appear.
 </ul>
 
-<img src="https://www.andresfrixione.com/pasapalabraslogin.jpg" />
+<img src="https://www.andresfrixione.com/pasapalabras/pasapalabraslogin.jpg" />
 2) Press "Start" to go to the main page.
 
 ## Game Dashboard
@@ -64,11 +64,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 3. To switch the current player, press the "Next Player" button (or press the "n" key on the keyboard).
 
 4. The clock can be adjusted either pressing on the up and down arrows inside the clock.
-   <img src="https://www.andresfrixione.com/clock.jpg" />
+   <img src="https://www.andresfrixione.com/pasapalabras/clock.jpg" />
 
 5. The operator can modify the user settings by clicking on the "Settings" button.
 
-<img src="https://www.andresfrixione.com/settings.jpg" />
+<img src="https://www.andresfrixione.com/pasapalabras/settings.jpg" />
 
 <h2>Player Settings</h2>
 <ul>
