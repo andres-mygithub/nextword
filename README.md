@@ -64,16 +64,26 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 3. To switch the current player, press the "Next Player" button (or press the "n" key on the keyboard).
 
 4. The clock can be adjusted either pressing on the up and down arrows inside the clock.
+   <br />
    <img src="https://www.andresfrixione.com/pasapalabras/pasapalabrasclock.jpg" />
-
-5. The operator can modify the user settings by clicking on the "Settings" button.
 
 <img src="https://www.andresfrixione.com/pasapalabras/pasapalabrassettings.jpg" />
 
 <h2>Player Settings</h2>
+<p>
+The operator can modify the user settings by clicking on the "Settings" button.
+</p>
 <ul>
 <li>Time Left: the amount of time left on the user's clock.</li>
 <li>Current Letter: the user's current letter on the wheel.</li>
 <li>Wheel Letter: the wheel letter to adjust. You can adjust the response to: "Not Answered", "Correct", "Incorrect" or "Next Word"</li>
 <li>Once finished, you can either save the changes or "Delete Player" to remove the player from the game.
 </ul>
+
+## Licensing
+
+The game is distributed under the <a href="https://github.com/andres-mygithub/nextword/blob/master/LICENSE.md">GNU General Public License</a>.
+
+## Disclaimer
+
+These files are open source and provided "as is". This project is intended only for educational purposes, not commercial use. The author does not take any responsibility for any damages the files/scripts may cause on your machine. Use at your own risk. If re-using, please credit the author: <a href="https://www.andresfrixione.com">Andres Frixione</a>.
