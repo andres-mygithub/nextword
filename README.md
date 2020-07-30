@@ -2,11 +2,11 @@
 
 A front-end interface to play the popular "The Alphabet" style trivia game with your friends.
 
-<img src="https://www.andresfrixione.com/pasapalabras/pasapalabrasdemo.jpg" />
+<img src="https://www.andresfrixione.com/nextword/pasapalabrasdemo.jpg" />
 
 ## Live Demo
 
-<a href="https://www.andresfrixione.com/pasapalabras">Live Demo</a>
+<a href="https://www.andresfrixione.com/nextword">Live Demo</a>
 
 ## Purpose of the game
 
@@ -45,7 +45,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 <li>Duration: anywhere from 30 seconds to 300 seconds or No Limit. If no limit is selected, then the clock won't appear.
 </ul>
 
-<img src="https://www.andresfrixione.com/pasapalabras/pasapalabraslogin.jpg" />
+<img src="https://www.andresfrixione.com/nextword/pasapalabraslogin.jpg" />
 2) Press "Start" to go to the main page.
 
 ## Game Dashboard
@@ -65,9 +65,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 4. The clock can be adjusted either pressing on the up and down arrows inside the clock.
    <br />
-   <img src="https://www.andresfrixione.com/pasapalabras/pasapalabrasclock.jpg" />
+   <img src="https://www.andresfrixione.com/nextword/pasapalabrasclock.jpg" />
 
-<img src="https://www.andresfrixione.com/pasapalabras/pasapalabrassettings.jpg" />
+<img src="https://www.andresfrixione.com/nextword/pasapalabrassettings.jpg" />
 
 <h2>Player Settings</h2>
 <p>
