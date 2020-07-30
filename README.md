@@ -64,11 +64,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 3. To switch the current player, press the "Next Player" button (or press the "n" key on the keyboard).
 
 4. The clock can be adjusted either pressing on the up and down arrows inside the clock.
-   <img src="https://www.andresfrixione.com/pasapalabras/clock.jpg" />
+   <img src="https://www.andresfrixione.com/pasapalabras/pasapalabrasclock.jpg" />
 
 5. The operator can modify the user settings by clicking on the "Settings" button.
 
-<img src="https://www.andresfrixione.com/pasapalabras/settings.jpg" />
+<img src="https://www.andresfrixione.com/pasapalabras/pasapalabrassettings.jpg" />
 
 <h2>Player Settings</h2>
 <ul>
