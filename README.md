@@ -2,6 +2,8 @@
 
 A front-end interface to play the popular "The Alphabet" style trivia game with your friends.
 
+<img src="https://www.andresfrixione.com/pasapalabrasdemo.jpg" />
+
 ## Purpose of the game
 
 The purpose of the game is to go through the letters of the alphabet on the Wheel. For each letter, the player is read a definition of a word starting with or containing that letter. The player can either respond with a word, or can pass to the "Next Word". The winner is the player who completes the wheel with the highest number of points.
@@ -35,6 +37,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ## How to play
 
 1 ) In the login page, enter a username.
+
 <h2>Options</h2>
 <ul>
 <li> Language: English or Spanish. If Spanish is selected, then the ñ letter will also appear.</li>
@@ -42,7 +45,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 <li>Duration: anywhere from 30 seconds to 300 seconds or No Limit. If no limit is selected, then the clock won't appear.
 </ul>
 
-<img src="https://www.andresfrixione.com/pasapalabras/pasapalabraslogin.jpg" />
+<img src="https://www.andresfrixione.com/pasapalabraslogin.jpg" />
 2) Press "Start" to go to the main page.
 
 ## Game Dashboard
@@ -61,11 +64,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 3. To switch the current player, press the "Next Player" button (or press the "n" key on the keyboard).
 
 4. The clock can be adjusted either pressing on the up and down arrows inside the clock.
-   <img src="https://www.andresfrixione.com/pasapalabras/clock.jpg" />
+   <img src="https://www.andresfrixione.com/clock.jpg" />
 
 5. The operator can modify the user settings by clicking on the "Settings" button.
 
-<img src="https://www.andresfrixione.com/pasapalabras/settings.jpg" />
+<img src="https://www.andresfrixione.com/settings.jpg" />
 
 <h2>Player Settings</h2>
 <ul>
