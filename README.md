@@ -1,6 +1,6 @@
 ## Próxima Palabra / Next Word
 
-A front-end interface to play the popular "The Alphabet" style trivia game with your friends.
+A front-end interface to play the an "alphabet" style trivia game with your friends.
 
 <img src="https://www.andresfrixione.com/nextword/pasapalabrasdemo.jpg" />
 
@@ -10,7 +10,7 @@ A front-end interface to play the popular "The Alphabet" style trivia game with 
 
 ## Purpose of the game
 
-The purpose of the game is to go through the letters of the alphabet on the Wheel. For each letter, the player is read a definition of a word starting with or containing that letter. The player can either respond with a word, or can pass to the "Next Word". The winner is the player who completes the wheel with the highest number of points.
+The purpose of the game is to go through the letters of the alphabet on the Wheel. For each letter, the player is read a definition of a word starting with or containing that letter. The player can either respond with a word, or can skip to the "Next Word". The winner is the player who completes the wheel with the highest number of points.
 
 ## How to install
 
