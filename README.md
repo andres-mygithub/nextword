@@ -4,13 +4,13 @@ A front-end interface to play the popular "The Alphabet" style trivia game with 
 
 <img src="https://www.andresfrixione.com/pasapalabras/pasapalabrasdemo.jpg" />
 
-## Purpose of the game
-
-The purpose of the game is to go through the letters of the alphabet on the Wheel. For each letter, the player is read a definition of a word starting with or containing that letter. The player can either respond with a word, or can pass to the "Next Word". The winner is the player who completes the wheel with the highest number of points.
-
 ## Live Demo
 
 <a href="https://www.andresfrixione.com/pasapalabras">Live Demo</a>
+
+## Purpose of the game
+
+The purpose of the game is to go through the letters of the alphabet on the Wheel. For each letter, the player is read a definition of a word starting with or containing that letter. The player can either respond with a word, or can pass to the "Next Word". The winner is the player who completes the wheel with the highest number of points.
 
 ## How to install
 
