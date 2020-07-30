@@ -1,0 +1,78 @@
+.clock-controller-container {
+    grid-area: clock-controller;
+    place-self: flex-start;
+    justify-self: center;
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+.clock-controller-btn {
+    width: 152px;
+    height: 53px;
+    background: var(--dark-green);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--raleway-font);
+    color: var(--white-outline);
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.clock-controller-btn:hover {
+    transform: scale(1.1);
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.start {
+    background: var(--dark-green);
+}
+
+.start:hover {
+    background: var(--hover-green);
+}
+
+.pause {
+    background: var(--gold);
+}
+
+.pause:hover {
+    background: var(--hover-gold);
+}
+
+.start::after,
+.pause::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+    display: inline-block;
+    margin-left: 8px;
+    vertical-align: top;
+}
+
+.start::after {
+    background: url("../../../assets/play-button.svg") center / contain no-repeat;
+}
+
+.pause::after {
+    background: url("../../../assets/pause-button.svg") center / contain no-repeat;
+}
+
+/* Uncomment to get the "Spacebar icon"
+.spacebar-icon {
+    content: "";
+    width: 77px;
+    height: 30px;
+    margin-top: 15px;
+    display: inline-block;
+    background: url("../../../assets/spacebar.svg") no-repeat;
+    background-size: contain;
+}
+*/

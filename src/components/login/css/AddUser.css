@@ -1,0 +1,55 @@
+.addUser-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.addUserInput {
+    width: 297px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: var(--pontano-font);
+    font-size: 1.7em;
+    padding-left: 0.3em;
+}
+
+.addUserInput::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.addUserBtn {
+    width: 125px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-blue);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--raleway-font);
+    color: var(--white-outline);
+    font-size: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.addUserBtn:hover {
+    background: var(--hover);
+    color: var(--dark-steel);
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.addUserBtn::after {
+    content: "+";
+    padding-left: 0.1em;
+    font-size: 3em;
+}

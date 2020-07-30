@@ -1,0 +1,38 @@
+.settings-select-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+}
+
+.settings-select-container>h3 {
+    font: var(--raleway-font);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 15px 0 0 15px;
+}
+
+.settings-select {
+    font-size: 20px;
+    line-height: 35px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    width: 195px;
+    height: 67px;
+    margin: 5px 5px 5px 15px;
+    padding: 0 0 0 10px;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Remove default arrow */
+    background: url("../../../assets/settings-select-small.svg") no-repeat center / cover;
+}
+
+.select-large {
+    width: 407px;
+    height: 67px;
+    /* Remove default arrow */
+    background: url("../../../assets/settings-select-large.svg") no-repeat center / cover;
+}

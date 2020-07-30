@@ -1,0 +1,14 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "back title table"
+        ". wheel table"
+        ". wheel table"
+        "clock wheel ."
+        "clock next-player settings"
+        "clock-controller navigation settings"
+        "footer footer footer";
+    place-items: center;
+}

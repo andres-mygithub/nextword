@@ -1,0 +1,90 @@
+.navigation-container {
+    grid-area: navigation;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navigation-btn {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: none;
+    margin: 30px 30px 65px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-btn:hover {
+    transform: scale(1.2);
+    transition: ease-in-out 100ms;
+}
+
+.correct-btn {
+    background: var(--dark-green);
+}
+
+.correct-btn:hover {
+    background: var(--hover-green);
+}
+
+.incorrect-btn {
+    background: var(--dark-red);
+}
+
+.incorrect-btn:hover {
+    background: var(--hover-red);
+}
+
+.pasapalabra-btn {
+    background: var(--gold);
+}
+
+.pasapalabra-btn:hover {
+    background: var(--hover-gold)
+}
+
+.navigation-icons {
+    width: 52px;
+    height: 52px;
+}
+
+.correct-icon {
+    background: url("../../../assets/correct.svg") no-repeat center / contain;
+}
+
+.incorrect-icon {
+    width: 45px;
+    height: 45px;
+    background: url("../../../assets/wrong.svg") no-repeat center / contain;
+}
+
+.pasapalabra-icon {
+    background: url("../../../assets/redo.svg") no-repeat center / contain;
+}
+
+.correct-btn:after,
+.incorrect-btn:after,
+.pasapalabra-btn:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.correct-btn:after {
+    transform: translate(0%, 245%);
+    background: url("../../../assets/key-c.svg") no-repeat center / contain;
+}
+
+.incorrect-btn:after {
+    transform: translate(0%, 245%);
+    background: url("../../../assets/key-v.svg") no-repeat center / contain;
+}
+
+.pasapalabra-btn:after {
+    transform: translate(0%, 245%);
+    background: url("../../../assets/key-right-arrow.svg") no-repeat center / contain;
+}

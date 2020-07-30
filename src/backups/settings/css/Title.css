@@ -1,0 +1,38 @@
+.settings-title-container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.close-modal {
+    cursor: pointer;
+    align-self: center;
+    width: 32px;
+    height: 27px;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Remove default arrow */
+    background: url("../../../assets/close-button.svg") no-repeat center / cover;
+}
+
+.close-modal:hover {
+    background: url("../../../assets/close-button-hover.svg") no-repeat center / cover;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.settings-title-container>h1 {
+    font: var(--raleway-font);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0;
+    flex: 4;
+}

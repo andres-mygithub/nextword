@@ -1,38 +1,85 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap');
+
+* {
+  /* border: 1px dashed red; */
+}
+
+:root {
+  --dark-blue: #2D1657;
+  --light-blue: #50709F;
+  --lavender: #9D8CF3;
+  --dark-red: #D20047;
+  --dark-green: #3f9450;
+  --dark-grey: #353535;
+  --dark-steel: #484848;
+  --light-grey: #818181;
+  --modal-grey: #cecece;
+  --modal-dark-grey: #818181;
+  --white-outline: #ffffff;
+  --hover-green: #296134;
+  --hover-red: #99030f;
+  --gold: #e2bb48;
+  --hover-gold: #aa8410;
+  --hover: #f0ca56;
+  --raleway-font: 'Raleway', sans-serif;
+  --pontano-font: 'Pontano Sans', sans-serif;
+  --arrow-font: 'Arial', sans-serif;
+  --palanquin-font: 'Palanquin Dark', sans-serif;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #83a4d4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: url("./assets/pop-art-background.svg") no-repeat fixed center / cover;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 103%;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: var(--light-grey) !important;
+  color: var(--white-outline) !important;
+  transform: none !important;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background: rgba(251, 221, 112, 0.6);
+  color: var(--dark-steel);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.35);
+}
+
+.tooltip-is-active {
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tooltip-bottom {
+  transform: translateY(10px);
 }

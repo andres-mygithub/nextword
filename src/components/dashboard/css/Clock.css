@@ -1,0 +1,99 @@
+.clock-container {
+    grid-area: clock;
+    background: var(--dark-blue);
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid var(--white-outline);
+    transition: border 1000ms linear;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgb(9, 9, 121);
+    background: radial-gradient(circle, rgba(9, 9, 121, 1) 0%, rgba(45, 22, 87, 1) 69%, rgba(45, 22, 87, 1) 70%);
+}
+
+.clock-container span {
+    color: var(--white-outline);
+    position: relative;
+}
+
+.clock-time {
+    font-family: var(--raleway-font);
+    font-size: 3em;
+}
+
+.clock-subheader {
+    font-family: var(--pontano-font);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.timer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.timer-btn:disabled {
+    visibility: hidden;
+}
+
+.timer-up,
+.timer-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    background: transparent;
+}
+
+.timer-up {
+    border-bottom: 35px solid var(--light-blue);
+    border-top: none;
+}
+
+.timer-down {
+    border-top: 35px solid var(--light-blue);
+    border-bottom: none;
+}
+
+.timer-up:hover,
+.timer-down:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.timer-up:hover {
+    border-bottom: 35px solid var(--hover-gold);
+}
+
+.timer-down:hover {
+    border-top: 35px solid var(--hover-gold);
+}
+
+.timer-btn>span {
+    font-family: var(--pontano-font);
+    color: var(--dark-blue);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.timer-up>span {
+    margin-bottom: -40px;
+
+}
+
+.timer-down>span {
+    margin-top: -45px;
+}
+
+.timer-btn>span:hover {
+    color: var(--white-outline);
+}

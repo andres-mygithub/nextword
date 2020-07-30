@@ -1,0 +1,49 @@
+.settings-button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+.settings-modal-btn {
+    width: 230px;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-blue);
+    border: none;
+    border-radius: 5px;
+    color: var(--white-outline);
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.settings-modal-btn:hover {
+    background: var(--hover);
+    color: var(--dark-steel);
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+.settings-modal-btn>span {
+    pointer-events: none;
+}
+
+.btn-small {
+    width: 155px;
+    height: 67px;
+}
+
+.input-green {
+    background: var(--dark-green);
+}
+
+.input-red {
+    background: var(--dark-red);
+}
