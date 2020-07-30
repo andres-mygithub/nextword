@@ -1,8 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Próxima Palabra / Next Word
 
-## Available Scripts
+A front-end interface to play the popular "The Alphabet" style trivia game with your friends.
 
-In the project directory, you can run:
+## Purpose of the game
+
+The purpose of the game is to go through the letters of the alphabet on the Wheel. For each letter, the player is read a definition of a word starting with or containing that letter. The player can either respond with a word, or can pass to the "Next Word". The winner is the player who completes the wheel with the highest number of points.
+
+## Live Demo
+
+<a href="https://www.andresfrixione.com/pasapalabras">Live Demo</a>
+
+## How to install
+
+Simply clone the project and then run:
 
 ### `npm start`
 
@@ -11,11 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -27,42 +32,45 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## How to play
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1 ) In the login page, enter a username.
+<h2>Options</h2>
+<ul>
+<li> Language: English or Spanish. If Spanish is selected, then the ñ letter will also appear.</li>
+<li> Penalize Incorrect: If yes is selected, then incorrect answers will count against the player.</li>
+<li>Duration: anywhere from 30 seconds to 300 seconds or No Limit. If no limit is selected, then the clock won't appear.
+</ul>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://www.andresfrixione.com/pasapalabras/pasapalabraslogin.jpg" />
+2) Press "Start" to go to the main page.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Game Dashboard
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. The clock starts running once the "Start" button is clicked. The "active" letter will flash in purpose, and will also appear on the middle of the wheel.
 
-## Learn More
+<h2>Scoring the questions</h2>
+<ul>
+<li>The operator can either press the green checkmark (or press "c" on the keyboard) to mark the letter correct and advance to the next letter. The clock will continue runnning.</li>
+<li>The operator can press the red checkmark (or press "v" on the keyboard) to mark the letter incorrect. The clock will stop running.</li>
+<li>The operator can press the yellow arrow (or the "right arrow key" on the keyboard) to skip to the next letter. The clock will stop running</li>
+</ul>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. The players points will appear on the rankings table and below the user's name.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. To switch the current player, press the "Next Player" button (or press the "n" key on the keyboard).
 
-### Code Splitting
+4. The clock can be adjusted either pressing on the up and down arrows inside the clock.
+   <img src="https://www.andresfrixione.com/pasapalabras/clock.jpg" />
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+5. The operator can modify the user settings by clicking on the "Settings" button.
 
-### Analyzing the Bundle Size
+<img src="https://www.andresfrixione.com/pasapalabras/settings.jpg" />
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<h2>Player Settings</h2>
+<ul>
+<li>Time Left: the amount of time left on the user's clock.</li>
+<li>Current Letter: the user's current letter on the wheel.</li>
+<li>Wheel Letter: the wheel letter to adjust. You can adjust the response to: "Not Answered", "Correct", "Incorrect" or "Next Word"</li>
+<li>Once finished, you can either save the changes or "Delete Player" to remove the player from the game.
+</ul>
