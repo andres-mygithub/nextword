@@ -207,7 +207,13 @@ export default function Dashboard({
   }
 
   function handleNextWord() {
-    if (clockStatus() && getTypeCount("pasapalabra") + getTypeCount(null) === 1)
+    if (
+      clockStatus() &&
+      ((getLanguageState("ES") &&
+        getTypeCount("pasapalabra") + getTypeCount(null) === 1) ||
+        (getLanguageState("EN") &&
+          getTypeCount("pasapalabra") + getTypeCount(null) === 2))
+    )
       toggleTooltip("start-tooltip", "No other letters to skip.");
     else if (clockStatus()) manageClock("pasapalabra");
     else
@@ -229,14 +235,14 @@ export default function Dashboard({
         user={users[currentUserIdx]}
         getLanguageState={getLanguageState}
         key={uuidv4()}
-      />
-      <Inicio getLanguageState={getLanguageState} />
+      />{" "}
+      <Inicio getLanguageState={getLanguageState} />{" "}
       <Table
         users={users}
         currentUserIdx={currentUserIdx}
         key={uuidv4()}
         getLanguageState={getLanguageState}
-      />
+      />{" "}
       {users[currentUserIdx].gameDuration === null ||
       isNaN(users[currentUserIdx].gameDuration) ? null : (
         <Clock
@@ -246,13 +252,13 @@ export default function Dashboard({
           clockStatus={clockStatus}
           getLanguageState={getLanguageState}
         />
-      )}
+      )}{" "}
       <Wheel
         users={users}
         currentUserIdx={currentUserIdx}
         clockStatus={clockStatus}
         getLanguageState={getLanguageState}
-      />
+      />{" "}
       <ClockController
         user={users[currentUserIdx]}
         startClock={startClock}
@@ -263,7 +269,7 @@ export default function Dashboard({
         toggleAudio={toggleAudio}
         getLanguageState={getLanguageState}
         key={uuidv4()}
-      />
+      />{" "}
       <Nextplayer
         users={users}
         nextUser={nextUser}
@@ -271,7 +277,7 @@ export default function Dashboard({
         getAudio={getAudio}
         toggleAudio={toggleAudio}
         getLanguageState={getLanguageState}
-      />
+      />{" "}
       {getCurrentLetter() === null ? null : (
         <Navigation
           user={users[currentUserIdx]}
@@ -282,12 +288,12 @@ export default function Dashboard({
           useKey={useKey}
           key={uuidv4()}
         />
-      )}
+      )}{" "}
       <ControlPanel
         resetGame={resetGame}
         clockStatus={clockStatus}
         getLanguageState={getLanguageState}
-      />
+      />{" "}
       <Settings
         users={users}
         updateState={updateState}
@@ -295,7 +301,7 @@ export default function Dashboard({
         updatePoints={updatePoints}
         currentUserIdx={currentUserIdx}
         getLanguageState={getLanguageState}
-      />
+      />{" "}
     </div>
   );
 }

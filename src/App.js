@@ -434,13 +434,19 @@ export default class App extends Component {
     let currentUserIdx = this.state.currentUserIdx;
     let currentUser = this.state.users[currentUserIdx];
     let currentLetter = currentUser.currentLetter;
-    let result = false;
+    let result = null;
 
     let nullFilteredScoreBoard = currentUser.scoreboard.filter((el) => {
+      if (this.getLanguageState() === "EN") {
+        if (el.letter === "ñ") return null;
+      }
       return el.response === null;
     });
 
     let pasapalabraFilteredScoreBoard = currentUser.scoreboard.filter((el) => {
+      if (this.getLanguageState() === "EN") {
+        if (el.letter === "ñ") return null;
+      }
       return el.letter !== currentLetter ? el.response === "pasapalabra" : null;
     });
 
@@ -449,12 +455,19 @@ export default class App extends Component {
 
       let temp = pasapalabraFilteredScoreBoard[i].letter;
 
-      if (temp > currentLetter) return temp;
+      if (temp === "ñ" || currentLetter === "ñ") {
+        if (temp === "ñ") {
+          if (110.5 > currentLetter.charCodeAt(0)) return temp;
+        } else {
+          if (temp.charCodeAt(0) > 110.5) return temp;
+        }
+      } else {
+        if (temp > currentLetter) return temp;
+      }
     }
 
     if (nullFilteredScoreBoard.length > 0)
       result = nullFilteredScoreBoard[0].letter;
-
     return result;
   }
 
