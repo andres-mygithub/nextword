@@ -86,4 +86,4 @@ The game is distributed under the <a href="https://github.com/andres-mygithub/ne
 
 ## Disclaimer
 
-These files are open source and provided "as is". This project is intended only for educational purposes, not commercial use. The author does not take any responsibility for any damages the files/scripts may cause on your machine. Use at your own risk. If re-using, please credit the author: <a href="https://www.andresfrixione.com">Andres Frixione</a>.
+These files are open source and provided "as is". This project is intended only for educational purposes, not commercial use. The author does not take any responsibility for any damages the files/scripts may cause on your machine. Use at your own risk.
